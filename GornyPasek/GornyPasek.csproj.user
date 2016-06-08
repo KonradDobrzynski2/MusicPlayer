@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <SelectedDevice>unknown Google Nexus 5 - 5.0.0 - API 21 - 1080x1920</SelectedDevice>
+    <AndroidDesignerPreferredTheme>Theme</AndroidDesignerPreferredTheme>
+  </PropertyGroup>
+</Project>

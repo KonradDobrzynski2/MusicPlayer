@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Name of song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_name_list"
+        android:drawableLeft="@drawable/icon_tone"
+        android:gravity="center_vertical"
+        android:layout_margin="15dp" />
+</LinearLayout>

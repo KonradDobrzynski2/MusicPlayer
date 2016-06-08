@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayout_main"
+    android:background="@android:color/black">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearLayout_1"
+        android:background="@android:color/black"
+        android:layout_weight="1">
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@android:color/holo_red_dark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ImageView
+            android:src="@drawable/icon_aplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:layout_weight="2" />
+        <TextView
+            android:text="Select a file"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/song_name"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_weight="1" />
+        <SeekBar
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/red_scrubber_progress"
+            android:thumb="@drawable/red_scrubber_control" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LinearLayout_2"
+        android:background="@android:color/black"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LinearLayout_2_time"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/actual_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="left" />
+            <TextView
+                android:id="@+id/remains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/total_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LinearLayout_2_play"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/play_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_play_left"
+                android:layout_gravity="center_vertical" />
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_play" />
+            <ImageView
+                android:id="@+id/play_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_play_right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LinearLayout_2_loop"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/random_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_random_play_off"
+                android:layout_gravity="center_vertical" />
+            <ImageView
+                android:id="@+id/looping_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_looping_track_off"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LinearLayout_2_loop"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/with_a_folder"
+                android:gravity="center"
+                android:text="Select a folder"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LinearLayout_2_loop"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:text="Do not select a file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/next_song"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

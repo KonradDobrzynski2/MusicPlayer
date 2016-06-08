@@ -1,0 +1,25 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/information_about_aplication"
+        android:icon="@drawable/icon_information_aplication"
+        android:title="Information about the aplication"
+        myapp:showAsAction="always"/>
+
+  <item android:id="@+id/a_list_of_songs_in_the_folder"
+        android:icon="@drawable/icon_songs_list"
+        android:title="A list of songs in the folder"
+        myapp:showAsAction="always"/>
+
+  <item android:id="@+id/add_to_favorites"
+        android:title="Add to Favorites"
+        myapp:showAsAction="never"/>
+
+  <item android:id="@+id/a_list_of_songs_in_the_favorites"
+        android:title="A list of songs in the favorites"
+        myapp:showAsAction="never"/>
+  
+  <item android:id="@+id/play_A_favorites_song"
+        android:title="Play A favorites song"
+        myapp:showAsAction="never"/>
+</menu>
